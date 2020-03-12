@@ -1,0 +1,4 @@
+#Wed Mar 11 23:29:31 CET 2020
+base.0=D\:\\Dropbox\\Devs\\BislimExplorer\\AndroidApp\\app\\build\\intermediates\\dex\\release\\out\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

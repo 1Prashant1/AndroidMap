@@ -1,0 +1,287 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.app.BislimScout"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="17"
+8-->D:\clientproject\AndroidApp2\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->D:\clientproject\AndroidApp2\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+11-->D:\clientproject\AndroidApp2\app\src\main\AndroidManifest.xml:6:5-81
+11-->D:\clientproject\AndroidApp2\app\src\main\AndroidManifest.xml:6:22-78
+12    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+12-->D:\clientproject\AndroidApp2\app\src\main\AndroidManifest.xml:7:5-79
+12-->D:\clientproject\AndroidApp2\app\src\main\AndroidManifest.xml:7:22-76
+13    <uses-permission android:name="android.permission.INTERNET" />
+13-->D:\clientproject\AndroidApp2\app\src\main\AndroidManifest.xml:8:5-67
+13-->D:\clientproject\AndroidApp2\app\src\main\AndroidManifest.xml:8:22-64
+14    <uses-permission android:name="android.permission.CAMERA" />
+14-->D:\clientproject\AndroidApp2\app\src\main\AndroidManifest.xml:9:5-65
+14-->D:\clientproject\AndroidApp2\app\src\main\AndroidManifest.xml:9:22-62
+15    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+15-->D:\clientproject\AndroidApp2\app\src\main\AndroidManifest.xml:10:5-81
+15-->D:\clientproject\AndroidApp2\app\src\main\AndroidManifest.xml:10:22-78
+16    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+16-->D:\clientproject\AndroidApp2\app\src\main\AndroidManifest.xml:11:5-79
+16-->D:\clientproject\AndroidApp2\app\src\main\AndroidManifest.xml:11:22-76
+17    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+17-->[com.google.android.libraries.places:places:2.1.0] C:\Users\RiG.DESKTOP-8CR86K0\.gradle\caches\transforms-2\files-2.1\aee51e6f700c3729e3156837b26533ab\jetified-places-2.1.0\AndroidManifest.xml:10:5-76
+17-->[com.google.android.libraries.places:places:2.1.0] C:\Users\RiG.DESKTOP-8CR86K0\.gradle\caches\transforms-2\files-2.1\aee51e6f700c3729e3156837b26533ab\jetified-places-2.1.0\AndroidManifest.xml:10:22-73
+18
+19    <uses-feature
+19-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\RiG.DESKTOP-8CR86K0\.gradle\caches\transforms-2\files-2.1\edb03ed300512ae8da7c146a103a6c79\jetified-play-services-maps-17.0.0\AndroidManifest.xml:26:5-28:35
+20        android:glEsVersion="0x00020000"
+20-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\RiG.DESKTOP-8CR86K0\.gradle\caches\transforms-2\files-2.1\edb03ed300512ae8da7c146a103a6c79\jetified-play-services-maps-17.0.0\AndroidManifest.xml:27:9-41
+21        android:required="true" /> <!-- Don't require camera, as this requires a rear camera. This allows it to work on the Nexus 7 -->
+21-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\RiG.DESKTOP-8CR86K0\.gradle\caches\transforms-2\files-2.1\edb03ed300512ae8da7c146a103a6c79\jetified-play-services-maps-17.0.0\AndroidManifest.xml:28:9-32
+22    <uses-feature
+22-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\RiG.DESKTOP-8CR86K0\.gradle\caches\transforms-2\files-2.1\095b42ddb89c1bb4db3cd3fc3662b6b1\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:24:5-26:36
+23        android:name="android.hardware.camera"
+23-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\RiG.DESKTOP-8CR86K0\.gradle\caches\transforms-2\files-2.1\095b42ddb89c1bb4db3cd3fc3662b6b1\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:25:9-47
+24        android:required="false" />
+24-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\RiG.DESKTOP-8CR86K0\.gradle\caches\transforms-2\files-2.1\095b42ddb89c1bb4db3cd3fc3662b6b1\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:26:9-33
+25    <uses-feature
+25-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\RiG.DESKTOP-8CR86K0\.gradle\caches\transforms-2\files-2.1\095b42ddb89c1bb4db3cd3fc3662b6b1\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:27:5-29:36
+26        android:name="android.hardware.camera.front"
+26-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\RiG.DESKTOP-8CR86K0\.gradle\caches\transforms-2\files-2.1\095b42ddb89c1bb4db3cd3fc3662b6b1\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:28:9-53
+27        android:required="false" /> <!-- TODO replace above two with next line after Android 4.2 -->
+27-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\RiG.DESKTOP-8CR86K0\.gradle\caches\transforms-2\files-2.1\095b42ddb89c1bb4db3cd3fc3662b6b1\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:29:9-33
+28    <!-- <uses-feature android:name="android.hardware.camera.any"/> -->
+29    <uses-feature
+29-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\RiG.DESKTOP-8CR86K0\.gradle\caches\transforms-2\files-2.1\095b42ddb89c1bb4db3cd3fc3662b6b1\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:32:5-34:36
+30        android:name="android.hardware.camera.autofocus"
+30-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\RiG.DESKTOP-8CR86K0\.gradle\caches\transforms-2\files-2.1\095b42ddb89c1bb4db3cd3fc3662b6b1\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:33:9-57
+31        android:required="false" />
+31-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\RiG.DESKTOP-8CR86K0\.gradle\caches\transforms-2\files-2.1\095b42ddb89c1bb4db3cd3fc3662b6b1\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:34:9-33
+32    <uses-feature
+32-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\RiG.DESKTOP-8CR86K0\.gradle\caches\transforms-2\files-2.1\095b42ddb89c1bb4db3cd3fc3662b6b1\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:35:5-37:36
+33        android:name="android.hardware.camera.flash"
+33-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\RiG.DESKTOP-8CR86K0\.gradle\caches\transforms-2\files-2.1\095b42ddb89c1bb4db3cd3fc3662b6b1\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:36:9-53
+34        android:required="false" />
+34-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\RiG.DESKTOP-8CR86K0\.gradle\caches\transforms-2\files-2.1\095b42ddb89c1bb4db3cd3fc3662b6b1\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:37:9-33
+35    <uses-feature
+35-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\RiG.DESKTOP-8CR86K0\.gradle\caches\transforms-2\files-2.1\095b42ddb89c1bb4db3cd3fc3662b6b1\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:38:5-40:36
+36        android:name="android.hardware.screen.landscape"
+36-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\RiG.DESKTOP-8CR86K0\.gradle\caches\transforms-2\files-2.1\095b42ddb89c1bb4db3cd3fc3662b6b1\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:39:9-57
+37        android:required="false" />
+37-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\RiG.DESKTOP-8CR86K0\.gradle\caches\transforms-2\files-2.1\095b42ddb89c1bb4db3cd3fc3662b6b1\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:40:9-33
+38    <uses-feature
+38-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\RiG.DESKTOP-8CR86K0\.gradle\caches\transforms-2\files-2.1\095b42ddb89c1bb4db3cd3fc3662b6b1\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:41:5-43:36
+39        android:name="android.hardware.wifi"
+39-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\RiG.DESKTOP-8CR86K0\.gradle\caches\transforms-2\files-2.1\095b42ddb89c1bb4db3cd3fc3662b6b1\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:42:9-45
+40        android:required="false" />
+40-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\RiG.DESKTOP-8CR86K0\.gradle\caches\transforms-2\files-2.1\095b42ddb89c1bb4db3cd3fc3662b6b1\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:43:9-33
+41    <!--
+42         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+43         Google Maps Android API v2, but you must specify either coarse or fine
+44         location permissions for the 'MyLocation' functionality. 
+45    -->
+46    <application
+46-->D:\clientproject\AndroidApp2\app\src\main\AndroidManifest.xml:19:5-91:19
+47        android:name="com.app.BislimScout.MyApplication"
+47-->D:\clientproject\AndroidApp2\app\src\main\AndroidManifest.xml:20:9-57
+48        android:allowBackup="true"
+48-->D:\clientproject\AndroidApp2\app\src\main\AndroidManifest.xml:21:9-35
+49        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+49-->[androidx.core:core:1.1.0] C:\Users\RiG.DESKTOP-8CR86K0\.gradle\caches\transforms-2\files-2.1\1cd7eff88f5e86d0249af2958bf465f0\core-1.1.0\AndroidManifest.xml:24:18-86
+50        android:debuggable="true"
+51        android:icon="@mipmap/app_icon"
+51-->D:\clientproject\AndroidApp2\app\src\main\AndroidManifest.xml:22:9-40
+52        android:label="@string/app_name"
+52-->D:\clientproject\AndroidApp2\app\src\main\AndroidManifest.xml:23:9-41
+53        android:supportsRtl="true"
+53-->D:\clientproject\AndroidApp2\app\src\main\AndroidManifest.xml:24:9-35
+54        android:theme="@style/AppTheme"
+54-->D:\clientproject\AndroidApp2\app\src\main\AndroidManifest.xml:25:9-40
+55        android:usesCleartextTraffic="true" >
+55-->D:\clientproject\AndroidApp2\app\src\main\AndroidManifest.xml:26:9-44
+56        <activity
+56-->D:\clientproject\AndroidApp2\app\src\main\AndroidManifest.xml:28:9-37:20
+57            android:name="com.app.BislimScout.SplashActivity"
+57-->D:\clientproject\AndroidApp2\app\src\main\AndroidManifest.xml:29:13-62
+58            android:label="@string/app_name"
+58-->D:\clientproject\AndroidApp2\app\src\main\AndroidManifest.xml:30:13-45
+59            android:theme="@style/AppTheme.NoActionBar" >
+59-->D:\clientproject\AndroidApp2\app\src\main\AndroidManifest.xml:31:13-56
+60            <intent-filter>
+60-->D:\clientproject\AndroidApp2\app\src\main\AndroidManifest.xml:32:13-36:29
+61                <action android:name="android.intent.action.MAIN" />
+61-->D:\clientproject\AndroidApp2\app\src\main\AndroidManifest.xml:33:17-69
+61-->D:\clientproject\AndroidApp2\app\src\main\AndroidManifest.xml:33:25-66
+62
+63                <category android:name="android.intent.category.LAUNCHER" />
+63-->D:\clientproject\AndroidApp2\app\src\main\AndroidManifest.xml:35:17-77
+63-->D:\clientproject\AndroidApp2\app\src\main\AndroidManifest.xml:35:27-74
+64            </intent-filter>
+65        </activity>
+66        <activity
+66-->D:\clientproject\AndroidApp2\app\src\main\AndroidManifest.xml:38:9-41:58
+67            android:name="com.app.BislimScout.NextScreen"
+67-->D:\clientproject\AndroidApp2\app\src\main\AndroidManifest.xml:39:13-58
+68            android:label="@string/title_activity_next"
+68-->D:\clientproject\AndroidApp2\app\src\main\AndroidManifest.xml:40:13-56
+69            android:theme="@style/AppTheme.NoActionBar" />
+69-->D:\clientproject\AndroidApp2\app\src\main\AndroidManifest.xml:41:13-56
+70        <activity
+70-->D:\clientproject\AndroidApp2\app\src\main\AndroidManifest.xml:42:9-45:58
+71            android:name="com.app.BislimScout.AboutUsActivity"
+71-->D:\clientproject\AndroidApp2\app\src\main\AndroidManifest.xml:43:13-63
+72            android:label="@string/title_activity_aboutus"
+72-->D:\clientproject\AndroidApp2\app\src\main\AndroidManifest.xml:44:13-59
+73            android:theme="@style/AppTheme.NoActionBar" />
+73-->D:\clientproject\AndroidApp2\app\src\main\AndroidManifest.xml:45:13-56
+74        <activity
+74-->D:\clientproject\AndroidApp2\app\src\main\AndroidManifest.xml:46:9-49:58
+75            android:name="com.app.BislimScout.MunicipalityListActivity"
+75-->D:\clientproject\AndroidApp2\app\src\main\AndroidManifest.xml:47:13-72
+76            android:label="@string/title_municipalitylist"
+76-->D:\clientproject\AndroidApp2\app\src\main\AndroidManifest.xml:48:13-59
+77            android:theme="@style/AppTheme.NoActionBar" />
+77-->D:\clientproject\AndroidApp2\app\src\main\AndroidManifest.xml:49:13-56
+78        <activity
+78-->D:\clientproject\AndroidApp2\app\src\main\AndroidManifest.xml:50:9-53:58
+79            android:name="com.app.BislimScout.LocationListActivity"
+79-->D:\clientproject\AndroidApp2\app\src\main\AndroidManifest.xml:51:13-68
+80            android:label="@string/title_activity_locationlist"
+80-->D:\clientproject\AndroidApp2\app\src\main\AndroidManifest.xml:52:13-64
+81            android:theme="@style/AppTheme.NoActionBar" />
+81-->D:\clientproject\AndroidApp2\app\src\main\AndroidManifest.xml:53:13-56
+82        <activity
+82-->D:\clientproject\AndroidApp2\app\src\main\AndroidManifest.xml:54:9-57:58
+83            android:name="com.app.BislimScout.QRCodeActivity"
+83-->D:\clientproject\AndroidApp2\app\src\main\AndroidManifest.xml:55:13-62
+84            android:label="@string/title_activity_qrcode"
+84-->D:\clientproject\AndroidApp2\app\src\main\AndroidManifest.xml:56:13-58
+85            android:theme="@style/AppTheme.NoActionBar" />
+85-->D:\clientproject\AndroidApp2\app\src\main\AndroidManifest.xml:57:13-56
+86        <activity
+86-->D:\clientproject\AndroidApp2\app\src\main\AndroidManifest.xml:58:9-61:49
+87            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+87-->D:\clientproject\AndroidApp2\app\src\main\AndroidManifest.xml:59:13-74
+88            android:clearTaskOnLaunch="true"
+88-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\RiG.DESKTOP-8CR86K0\.gradle\caches\transforms-2\files-2.1\095b42ddb89c1bb4db3cd3fc3662b6b1\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:48:13-45
+89            android:screenOrientation="fullSensor"
+89-->D:\clientproject\AndroidApp2\app\src\main\AndroidManifest.xml:60:13-51
+90            android:stateNotNeeded="true"
+90-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\RiG.DESKTOP-8CR86K0\.gradle\caches\transforms-2\files-2.1\095b42ddb89c1bb4db3cd3fc3662b6b1\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:50:13-42
+91            android:theme="@style/zxing_CaptureTheme"
+91-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\RiG.DESKTOP-8CR86K0\.gradle\caches\transforms-2\files-2.1\095b42ddb89c1bb4db3cd3fc3662b6b1\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:51:13-54
+92            android:windowSoftInputMode="stateAlwaysHidden" />
+92-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\RiG.DESKTOP-8CR86K0\.gradle\caches\transforms-2\files-2.1\095b42ddb89c1bb4db3cd3fc3662b6b1\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:52:13-60
+93        <activity
+93-->D:\clientproject\AndroidApp2\app\src\main\AndroidManifest.xml:62:9-64:58
+94            android:name="com.app.BislimScout.LocationDetailActivity"
+94-->D:\clientproject\AndroidApp2\app\src\main\AndroidManifest.xml:63:13-70
+95            android:theme="@style/AppTheme.NoActionBar" />
+95-->D:\clientproject\AndroidApp2\app\src\main\AndroidManifest.xml:64:13-56
+96        <activity
+96-->D:\clientproject\AndroidApp2\app\src\main\AndroidManifest.xml:65:9-67:58
+97            android:name="com.app.BislimScout.ScoreActivity"
+97-->D:\clientproject\AndroidApp2\app\src\main\AndroidManifest.xml:66:13-61
+98            android:theme="@style/AppTheme.NoActionBar" />
+98-->D:\clientproject\AndroidApp2\app\src\main\AndroidManifest.xml:67:13-56
+99        <activity
+99-->D:\clientproject\AndroidApp2\app\src\main\AndroidManifest.xml:68:9-70:58
+100            android:name="com.app.BislimScout.QuestionActivity"
+100-->D:\clientproject\AndroidApp2\app\src\main\AndroidManifest.xml:69:13-64
+101            android:theme="@style/AppTheme.NoActionBar" />
+101-->D:\clientproject\AndroidApp2\app\src\main\AndroidManifest.xml:70:13-56
+102        <!--
+103             The API key for Google Maps-based APIs is defined as a string resource.
+104             (See the file "res/values/google_maps_api.xml").
+105             Note that the API key is linked to the encryption key used to sign the APK.
+106             You need a different API key for each encryption key, including the release key that is used to
+107             sign the APK for publishing.
+108             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+109        -->
+110        <meta-data
+110-->D:\clientproject\AndroidApp2\app\src\main\AndroidManifest.xml:79:9-81:71
+111            android:name="com.google.android.geo.API_KEY"
+111-->D:\clientproject\AndroidApp2\app\src\main\AndroidManifest.xml:80:13-58
+112            android:value="AIzaSyCAbm6Y-EK9YlL0Ntm_Kas7vFGBfICEIek" />
+112-->D:\clientproject\AndroidApp2\app\src\main\AndroidManifest.xml:81:13-68
+113
+114        <activity
+114-->D:\clientproject\AndroidApp2\app\src\main\AndroidManifest.xml:83:9-86:58
+115            android:name="com.app.BislimScout.LocationMapsActivity"
+115-->D:\clientproject\AndroidApp2\app\src\main\AndroidManifest.xml:84:13-68
+116            android:label="@string/title_activity_location_maps"
+116-->D:\clientproject\AndroidApp2\app\src\main\AndroidManifest.xml:85:13-65
+117            android:theme="@style/AppTheme.NoActionBar" />
+117-->D:\clientproject\AndroidApp2\app\src\main\AndroidManifest.xml:86:13-56
+118        <activity
+118-->D:\clientproject\AndroidApp2\app\src\main\AndroidManifest.xml:87:9-90:58
+119            android:name="com.app.BislimScout.LocationMapsActivityNew"
+119-->D:\clientproject\AndroidApp2\app\src\main\AndroidManifest.xml:88:13-71
+120            android:label="@string/title_activity_location_maps"
+120-->D:\clientproject\AndroidApp2\app\src\main\AndroidManifest.xml:89:13-65
+121            android:theme="@style/AppTheme.NoActionBar" />
+121-->D:\clientproject\AndroidApp2\app\src\main\AndroidManifest.xml:90:13-56
+122        <activity
+122-->[com.karumi:dexter:6.0.2] C:\Users\RiG.DESKTOP-8CR86K0\.gradle\caches\transforms-2\files-2.1\48c870bfed5dc7f8e7c5085a4d2eabd5\jetified-dexter-6.0.2\AndroidManifest.xml:27:9-29:72
+123            android:name="com.karumi.dexter.DexterActivity"
+123-->[com.karumi:dexter:6.0.2] C:\Users\RiG.DESKTOP-8CR86K0\.gradle\caches\transforms-2\files-2.1\48c870bfed5dc7f8e7c5085a4d2eabd5\jetified-dexter-6.0.2\AndroidManifest.xml:28:13-60
+124            android:theme="@style/Dexter.Internal.Theme.Transparent" />
+124-->[com.karumi:dexter:6.0.2] C:\Users\RiG.DESKTOP-8CR86K0\.gradle\caches\transforms-2\files-2.1\48c870bfed5dc7f8e7c5085a4d2eabd5\jetified-dexter-6.0.2\AndroidManifest.xml:29:13-69
+125        <activity
+125-->[com.google.android.libraries.places:places:2.1.0] C:\Users\RiG.DESKTOP-8CR86K0\.gradle\caches\transforms-2\files-2.1\aee51e6f700c3729e3156837b26533ab\jetified-places-2.1.0\AndroidManifest.xml:14:9-20:20
+126            android:name="com.google.android.libraries.places.widget.AutocompleteActivity"
+126-->[com.google.android.libraries.places:places:2.1.0] C:\Users\RiG.DESKTOP-8CR86K0\.gradle\caches\transforms-2\files-2.1\aee51e6f700c3729e3156837b26533ab\jetified-places-2.1.0\AndroidManifest.xml:15:13-91
+127            android:exported="false"
+127-->[com.google.android.libraries.places:places:2.1.0] C:\Users\RiG.DESKTOP-8CR86K0\.gradle\caches\transforms-2\files-2.1\aee51e6f700c3729e3156837b26533ab\jetified-places-2.1.0\AndroidManifest.xml:16:13-37
+128            android:label="@string/places_autocomplete_label"
+128-->[com.google.android.libraries.places:places:2.1.0] C:\Users\RiG.DESKTOP-8CR86K0\.gradle\caches\transforms-2\files-2.1\aee51e6f700c3729e3156837b26533ab\jetified-places-2.1.0\AndroidManifest.xml:17:13-62
+129            android:theme="@style/PlacesAutocompleteOverlay"
+129-->[com.google.android.libraries.places:places:2.1.0] C:\Users\RiG.DESKTOP-8CR86K0\.gradle\caches\transforms-2\files-2.1\aee51e6f700c3729e3156837b26533ab\jetified-places-2.1.0\AndroidManifest.xml:18:13-61
+130            android:windowSoftInputMode="adjustResize" >
+130-->[com.google.android.libraries.places:places:2.1.0] C:\Users\RiG.DESKTOP-8CR86K0\.gradle\caches\transforms-2\files-2.1\aee51e6f700c3729e3156837b26533ab\jetified-places-2.1.0\AndroidManifest.xml:19:13-55
+131        </activity>
+132
+133        <provider
+133-->[com.squareup.picasso:picasso:2.71828] C:\Users\RiG.DESKTOP-8CR86K0\.gradle\caches\transforms-2\files-2.1\2595cbf3ebd3ef2cf0063c2a4aa81fd8\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
+134            android:name="com.squareup.picasso.PicassoProvider"
+134-->[com.squareup.picasso:picasso:2.71828] C:\Users\RiG.DESKTOP-8CR86K0\.gradle\caches\transforms-2\files-2.1\2595cbf3ebd3ef2cf0063c2a4aa81fd8\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
+135            android:authorities="com.app.BislimScout.com.squareup.picasso"
+135-->[com.squareup.picasso:picasso:2.71828] C:\Users\RiG.DESKTOP-8CR86K0\.gradle\caches\transforms-2\files-2.1\2595cbf3ebd3ef2cf0063c2a4aa81fd8\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
+136            android:exported="false" /> <!-- Needs to be explicitly declared on P+ -->
+136-->[com.squareup.picasso:picasso:2.71828] C:\Users\RiG.DESKTOP-8CR86K0\.gradle\caches\transforms-2\files-2.1\2595cbf3ebd3ef2cf0063c2a4aa81fd8\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
+137        <uses-library
+137-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\RiG.DESKTOP-8CR86K0\.gradle\caches\transforms-2\files-2.1\edb03ed300512ae8da7c146a103a6c79\jetified-play-services-maps-17.0.0\AndroidManifest.xml:33:9-35:40
+138            android:name="org.apache.http.legacy"
+138-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\RiG.DESKTOP-8CR86K0\.gradle\caches\transforms-2\files-2.1\edb03ed300512ae8da7c146a103a6c79\jetified-play-services-maps-17.0.0\AndroidManifest.xml:34:13-50
+139            android:required="false" />
+139-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\RiG.DESKTOP-8CR86K0\.gradle\caches\transforms-2\files-2.1\edb03ed300512ae8da7c146a103a6c79\jetified-play-services-maps-17.0.0\AndroidManifest.xml:35:13-37
+140
+141        <activity
+141-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\RiG.DESKTOP-8CR86K0\.gradle\caches\transforms-2\files-2.1\6fb3f6cd2b75dfe7dd10f87d94351f9e\jetified-play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+142            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+142-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\RiG.DESKTOP-8CR86K0\.gradle\caches\transforms-2\files-2.1\6fb3f6cd2b75dfe7dd10f87d94351f9e\jetified-play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+143            android:exported="false"
+143-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\RiG.DESKTOP-8CR86K0\.gradle\caches\transforms-2\files-2.1\6fb3f6cd2b75dfe7dd10f87d94351f9e\jetified-play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+144            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+144-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\RiG.DESKTOP-8CR86K0\.gradle\caches\transforms-2\files-2.1\6fb3f6cd2b75dfe7dd10f87d94351f9e\jetified-play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+145
+146        <meta-data
+146-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\RiG.DESKTOP-8CR86K0\.gradle\caches\transforms-2\files-2.1\c39f27975e2128f358c90a3c3f9b8fee\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+147            android:name="com.google.android.gms.version"
+147-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\RiG.DESKTOP-8CR86K0\.gradle\caches\transforms-2\files-2.1\c39f27975e2128f358c90a3c3f9b8fee\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+148            android:value="@integer/google_play_services_version" />
+148-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\RiG.DESKTOP-8CR86K0\.gradle\caches\transforms-2\files-2.1\c39f27975e2128f358c90a3c3f9b8fee\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+149
+150        <provider
+150-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\RiG.DESKTOP-8CR86K0\.gradle\caches\transforms-2\files-2.1\47fd15a1beecdce990f8c0e18de79296\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:23:9-27:43
+151            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+151-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\RiG.DESKTOP-8CR86K0\.gradle\caches\transforms-2\files-2.1\47fd15a1beecdce990f8c0e18de79296\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:24:13-79
+152            android:authorities="com.app.BislimScout.lifecycle-process"
+152-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\RiG.DESKTOP-8CR86K0\.gradle\caches\transforms-2\files-2.1\47fd15a1beecdce990f8c0e18de79296\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:25:13-69
+153            android:exported="false"
+153-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\RiG.DESKTOP-8CR86K0\.gradle\caches\transforms-2\files-2.1\47fd15a1beecdce990f8c0e18de79296\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:26:13-37
+154            android:multiprocess="true" />
+154-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\RiG.DESKTOP-8CR86K0\.gradle\caches\transforms-2\files-2.1\47fd15a1beecdce990f8c0e18de79296\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:27:13-40
+155    </application>
+156
+157</manifest>

@@ -1,0 +1,253 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.app.BislimScout"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->D:\Dropbox\Devs\BislimExplorer\AndroidApp\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="28" />
+9-->D:\Dropbox\Devs\BislimExplorer\AndroidApp\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+11-->D:\Dropbox\Devs\BislimExplorer\AndroidApp\app\src\main\AndroidManifest.xml:6:5-81
+11-->D:\Dropbox\Devs\BislimExplorer\AndroidApp\app\src\main\AndroidManifest.xml:6:22-78
+12    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+12-->D:\Dropbox\Devs\BislimExplorer\AndroidApp\app\src\main\AndroidManifest.xml:7:5-79
+12-->D:\Dropbox\Devs\BislimExplorer\AndroidApp\app\src\main\AndroidManifest.xml:7:22-76
+13    <uses-permission android:name="android.permission.INTERNET" />
+13-->D:\Dropbox\Devs\BislimExplorer\AndroidApp\app\src\main\AndroidManifest.xml:8:5-67
+13-->D:\Dropbox\Devs\BislimExplorer\AndroidApp\app\src\main\AndroidManifest.xml:8:22-64
+14    <uses-permission android:name="android.permission.CAMERA" />
+14-->D:\Dropbox\Devs\BislimExplorer\AndroidApp\app\src\main\AndroidManifest.xml:9:5-65
+14-->D:\Dropbox\Devs\BislimExplorer\AndroidApp\app\src\main\AndroidManifest.xml:9:22-62
+15    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+15-->D:\Dropbox\Devs\BislimExplorer\AndroidApp\app\src\main\AndroidManifest.xml:10:5-81
+15-->D:\Dropbox\Devs\BislimExplorer\AndroidApp\app\src\main\AndroidManifest.xml:10:22-78
+16    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+16-->D:\Dropbox\Devs\BislimExplorer\AndroidApp\app\src\main\AndroidManifest.xml:11:5-79
+16-->D:\Dropbox\Devs\BislimExplorer\AndroidApp\app\src\main\AndroidManifest.xml:11:22-76
+17
+18    <uses-feature
+18-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\slavcoc\.gradle\caches\transforms-2\files-2.1\edb03ed300512ae8da7c146a103a6c79\jetified-play-services-maps-17.0.0\AndroidManifest.xml:26:5-28:35
+19        android:glEsVersion="0x00020000"
+19-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\slavcoc\.gradle\caches\transforms-2\files-2.1\edb03ed300512ae8da7c146a103a6c79\jetified-play-services-maps-17.0.0\AndroidManifest.xml:27:9-41
+20        android:required="true" /> <!-- Don't require camera, as this requires a rear camera. This allows it to work on the Nexus 7 -->
+20-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\slavcoc\.gradle\caches\transforms-2\files-2.1\edb03ed300512ae8da7c146a103a6c79\jetified-play-services-maps-17.0.0\AndroidManifest.xml:28:9-32
+21    <uses-feature
+21-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\slavcoc\.gradle\caches\transforms-2\files-2.1\afd123a2664ff46ba3845aeb4a34c1d9\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:24:5-26:36
+22        android:name="android.hardware.camera"
+22-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\slavcoc\.gradle\caches\transforms-2\files-2.1\afd123a2664ff46ba3845aeb4a34c1d9\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:25:9-47
+23        android:required="false" />
+23-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\slavcoc\.gradle\caches\transforms-2\files-2.1\afd123a2664ff46ba3845aeb4a34c1d9\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:26:9-33
+24    <uses-feature
+24-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\slavcoc\.gradle\caches\transforms-2\files-2.1\afd123a2664ff46ba3845aeb4a34c1d9\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:27:5-29:36
+25        android:name="android.hardware.camera.front"
+25-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\slavcoc\.gradle\caches\transforms-2\files-2.1\afd123a2664ff46ba3845aeb4a34c1d9\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:28:9-53
+26        android:required="false" /> <!-- TODO replace above two with next line after Android 4.2 -->
+26-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\slavcoc\.gradle\caches\transforms-2\files-2.1\afd123a2664ff46ba3845aeb4a34c1d9\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:29:9-33
+27    <!-- <uses-feature android:name="android.hardware.camera.any"/> -->
+28    <uses-feature
+28-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\slavcoc\.gradle\caches\transforms-2\files-2.1\afd123a2664ff46ba3845aeb4a34c1d9\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:32:5-34:36
+29        android:name="android.hardware.camera.autofocus"
+29-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\slavcoc\.gradle\caches\transforms-2\files-2.1\afd123a2664ff46ba3845aeb4a34c1d9\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:33:9-57
+30        android:required="false" />
+30-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\slavcoc\.gradle\caches\transforms-2\files-2.1\afd123a2664ff46ba3845aeb4a34c1d9\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:34:9-33
+31    <uses-feature
+31-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\slavcoc\.gradle\caches\transforms-2\files-2.1\afd123a2664ff46ba3845aeb4a34c1d9\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:35:5-37:36
+32        android:name="android.hardware.camera.flash"
+32-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\slavcoc\.gradle\caches\transforms-2\files-2.1\afd123a2664ff46ba3845aeb4a34c1d9\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:36:9-53
+33        android:required="false" />
+33-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\slavcoc\.gradle\caches\transforms-2\files-2.1\afd123a2664ff46ba3845aeb4a34c1d9\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:37:9-33
+34    <uses-feature
+34-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\slavcoc\.gradle\caches\transforms-2\files-2.1\afd123a2664ff46ba3845aeb4a34c1d9\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:38:5-40:36
+35        android:name="android.hardware.screen.landscape"
+35-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\slavcoc\.gradle\caches\transforms-2\files-2.1\afd123a2664ff46ba3845aeb4a34c1d9\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:39:9-57
+36        android:required="false" />
+36-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\slavcoc\.gradle\caches\transforms-2\files-2.1\afd123a2664ff46ba3845aeb4a34c1d9\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:40:9-33
+37    <uses-feature
+37-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\slavcoc\.gradle\caches\transforms-2\files-2.1\afd123a2664ff46ba3845aeb4a34c1d9\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:41:5-43:36
+38        android:name="android.hardware.wifi"
+38-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\slavcoc\.gradle\caches\transforms-2\files-2.1\afd123a2664ff46ba3845aeb4a34c1d9\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:42:9-45
+39        android:required="false" />
+39-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\slavcoc\.gradle\caches\transforms-2\files-2.1\afd123a2664ff46ba3845aeb4a34c1d9\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:43:9-33
+40    <!--
+41         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+42         Google Maps Android API v2, but you must specify either coarse or fine
+43         location permissions for the 'MyLocation' functionality. 
+44    -->
+45    <application
+45-->D:\Dropbox\Devs\BislimExplorer\AndroidApp\app\src\main\AndroidManifest.xml:19:5-91:19
+46        android:name="com.app.BislimScout.MyApplication"
+46-->D:\Dropbox\Devs\BislimExplorer\AndroidApp\app\src\main\AndroidManifest.xml:20:9-57
+47        android:allowBackup="true"
+47-->D:\Dropbox\Devs\BislimExplorer\AndroidApp\app\src\main\AndroidManifest.xml:21:9-35
+48        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+48-->[androidx.core:core:1.1.0] C:\Users\slavcoc\.gradle\caches\transforms-2\files-2.1\1cd7eff88f5e86d0249af2958bf465f0\core-1.1.0\AndroidManifest.xml:24:18-86
+49        android:icon="@mipmap/app_icon"
+49-->D:\Dropbox\Devs\BislimExplorer\AndroidApp\app\src\main\AndroidManifest.xml:22:9-40
+50        android:label="@string/app_name"
+50-->D:\Dropbox\Devs\BislimExplorer\AndroidApp\app\src\main\AndroidManifest.xml:23:9-41
+51        android:supportsRtl="true"
+51-->D:\Dropbox\Devs\BislimExplorer\AndroidApp\app\src\main\AndroidManifest.xml:24:9-35
+52        android:theme="@style/AppTheme"
+52-->D:\Dropbox\Devs\BislimExplorer\AndroidApp\app\src\main\AndroidManifest.xml:25:9-40
+53        android:usesCleartextTraffic="true" >
+53-->D:\Dropbox\Devs\BislimExplorer\AndroidApp\app\src\main\AndroidManifest.xml:26:9-44
+54        <activity
+54-->D:\Dropbox\Devs\BislimExplorer\AndroidApp\app\src\main\AndroidManifest.xml:28:9-37:20
+55            android:name="com.app.BislimScout.SplashActivity"
+55-->D:\Dropbox\Devs\BislimExplorer\AndroidApp\app\src\main\AndroidManifest.xml:29:13-62
+56            android:label="@string/app_name"
+56-->D:\Dropbox\Devs\BislimExplorer\AndroidApp\app\src\main\AndroidManifest.xml:30:13-45
+57            android:theme="@style/AppTheme.NoActionBar" >
+57-->D:\Dropbox\Devs\BislimExplorer\AndroidApp\app\src\main\AndroidManifest.xml:31:13-56
+58            <intent-filter>
+58-->D:\Dropbox\Devs\BislimExplorer\AndroidApp\app\src\main\AndroidManifest.xml:32:13-36:29
+59                <action android:name="android.intent.action.MAIN" />
+59-->D:\Dropbox\Devs\BislimExplorer\AndroidApp\app\src\main\AndroidManifest.xml:33:17-69
+59-->D:\Dropbox\Devs\BislimExplorer\AndroidApp\app\src\main\AndroidManifest.xml:33:25-66
+60
+61                <category android:name="android.intent.category.LAUNCHER" />
+61-->D:\Dropbox\Devs\BislimExplorer\AndroidApp\app\src\main\AndroidManifest.xml:35:17-77
+61-->D:\Dropbox\Devs\BislimExplorer\AndroidApp\app\src\main\AndroidManifest.xml:35:27-74
+62            </intent-filter>
+63        </activity>
+64        <activity
+64-->D:\Dropbox\Devs\BislimExplorer\AndroidApp\app\src\main\AndroidManifest.xml:38:9-41:58
+65            android:name="com.app.BislimScout.NextScreen"
+65-->D:\Dropbox\Devs\BislimExplorer\AndroidApp\app\src\main\AndroidManifest.xml:39:13-58
+66            android:label="@string/title_activity_next"
+66-->D:\Dropbox\Devs\BislimExplorer\AndroidApp\app\src\main\AndroidManifest.xml:40:13-56
+67            android:theme="@style/AppTheme.NoActionBar" />
+67-->D:\Dropbox\Devs\BislimExplorer\AndroidApp\app\src\main\AndroidManifest.xml:41:13-56
+68        <activity
+68-->D:\Dropbox\Devs\BislimExplorer\AndroidApp\app\src\main\AndroidManifest.xml:42:9-45:58
+69            android:name="com.app.BislimScout.AboutUsActivity"
+69-->D:\Dropbox\Devs\BislimExplorer\AndroidApp\app\src\main\AndroidManifest.xml:43:13-63
+70            android:label="@string/title_activity_aboutus"
+70-->D:\Dropbox\Devs\BislimExplorer\AndroidApp\app\src\main\AndroidManifest.xml:44:13-59
+71            android:theme="@style/AppTheme.NoActionBar" />
+71-->D:\Dropbox\Devs\BislimExplorer\AndroidApp\app\src\main\AndroidManifest.xml:45:13-56
+72        <activity
+72-->D:\Dropbox\Devs\BislimExplorer\AndroidApp\app\src\main\AndroidManifest.xml:46:9-49:58
+73            android:name="com.app.BislimScout.MunicipalityListActivity"
+73-->D:\Dropbox\Devs\BislimExplorer\AndroidApp\app\src\main\AndroidManifest.xml:47:13-72
+74            android:label="@string/title_municipalitylist"
+74-->D:\Dropbox\Devs\BislimExplorer\AndroidApp\app\src\main\AndroidManifest.xml:48:13-59
+75            android:theme="@style/AppTheme.NoActionBar" />
+75-->D:\Dropbox\Devs\BislimExplorer\AndroidApp\app\src\main\AndroidManifest.xml:49:13-56
+76        <activity
+76-->D:\Dropbox\Devs\BislimExplorer\AndroidApp\app\src\main\AndroidManifest.xml:50:9-53:58
+77            android:name="com.app.BislimScout.LocationListActivity"
+77-->D:\Dropbox\Devs\BislimExplorer\AndroidApp\app\src\main\AndroidManifest.xml:51:13-68
+78            android:label="@string/title_activity_locationlist"
+78-->D:\Dropbox\Devs\BislimExplorer\AndroidApp\app\src\main\AndroidManifest.xml:52:13-64
+79            android:theme="@style/AppTheme.NoActionBar" />
+79-->D:\Dropbox\Devs\BislimExplorer\AndroidApp\app\src\main\AndroidManifest.xml:53:13-56
+80        <activity
+80-->D:\Dropbox\Devs\BislimExplorer\AndroidApp\app\src\main\AndroidManifest.xml:54:9-57:58
+81            android:name="com.app.BislimScout.QRCodeActivity"
+81-->D:\Dropbox\Devs\BislimExplorer\AndroidApp\app\src\main\AndroidManifest.xml:55:13-62
+82            android:label="@string/title_activity_qrcode"
+82-->D:\Dropbox\Devs\BislimExplorer\AndroidApp\app\src\main\AndroidManifest.xml:56:13-58
+83            android:theme="@style/AppTheme.NoActionBar" />
+83-->D:\Dropbox\Devs\BislimExplorer\AndroidApp\app\src\main\AndroidManifest.xml:57:13-56
+84        <activity
+84-->D:\Dropbox\Devs\BislimExplorer\AndroidApp\app\src\main\AndroidManifest.xml:58:9-61:49
+85            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+85-->D:\Dropbox\Devs\BislimExplorer\AndroidApp\app\src\main\AndroidManifest.xml:59:13-74
+86            android:clearTaskOnLaunch="true"
+86-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\slavcoc\.gradle\caches\transforms-2\files-2.1\afd123a2664ff46ba3845aeb4a34c1d9\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:48:13-45
+87            android:screenOrientation="portrait"
+87-->D:\Dropbox\Devs\BislimExplorer\AndroidApp\app\src\main\AndroidManifest.xml:60:13-49
+88            android:stateNotNeeded="true"
+88-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\slavcoc\.gradle\caches\transforms-2\files-2.1\afd123a2664ff46ba3845aeb4a34c1d9\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:50:13-42
+89            android:theme="@style/zxing_CaptureTheme"
+89-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\slavcoc\.gradle\caches\transforms-2\files-2.1\afd123a2664ff46ba3845aeb4a34c1d9\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:51:13-54
+90            android:windowSoftInputMode="stateAlwaysHidden" />
+90-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\slavcoc\.gradle\caches\transforms-2\files-2.1\afd123a2664ff46ba3845aeb4a34c1d9\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:52:13-60
+91        <activity
+91-->D:\Dropbox\Devs\BislimExplorer\AndroidApp\app\src\main\AndroidManifest.xml:62:9-64:58
+92            android:name="com.app.BislimScout.LocationDetailActivity"
+92-->D:\Dropbox\Devs\BislimExplorer\AndroidApp\app\src\main\AndroidManifest.xml:63:13-70
+93            android:theme="@style/AppTheme.NoActionBar" />
+93-->D:\Dropbox\Devs\BislimExplorer\AndroidApp\app\src\main\AndroidManifest.xml:64:13-56
+94        <activity
+94-->D:\Dropbox\Devs\BislimExplorer\AndroidApp\app\src\main\AndroidManifest.xml:65:9-67:58
+95            android:name="com.app.BislimScout.ScoreActivity"
+95-->D:\Dropbox\Devs\BislimExplorer\AndroidApp\app\src\main\AndroidManifest.xml:66:13-61
+96            android:theme="@style/AppTheme.NoActionBar" />
+96-->D:\Dropbox\Devs\BislimExplorer\AndroidApp\app\src\main\AndroidManifest.xml:67:13-56
+97        <activity
+97-->D:\Dropbox\Devs\BislimExplorer\AndroidApp\app\src\main\AndroidManifest.xml:68:9-70:58
+98            android:name="com.app.BislimScout.QuestionActivity"
+98-->D:\Dropbox\Devs\BislimExplorer\AndroidApp\app\src\main\AndroidManifest.xml:69:13-64
+99            android:theme="@style/AppTheme.NoActionBar" />
+99-->D:\Dropbox\Devs\BislimExplorer\AndroidApp\app\src\main\AndroidManifest.xml:70:13-56
+100        <!--
+101             The API key for Google Maps-based APIs is defined as a string resource.
+102             (See the file "res/values/google_maps_api.xml").
+103             Note that the API key is linked to the encryption key used to sign the APK.
+104             You need a different API key for each encryption key, including the release key that is used to
+105             sign the APK for publishing.
+106             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+107        -->
+108        <meta-data
+108-->D:\Dropbox\Devs\BislimExplorer\AndroidApp\app\src\main\AndroidManifest.xml:79:9-81:55
+109            android:name="com.google.android.geo.API_KEY"
+109-->D:\Dropbox\Devs\BislimExplorer\AndroidApp\app\src\main\AndroidManifest.xml:80:13-58
+110            android:value="@string/google_maps_key" />
+110-->D:\Dropbox\Devs\BislimExplorer\AndroidApp\app\src\main\AndroidManifest.xml:81:13-52
+111
+112        <activity
+112-->D:\Dropbox\Devs\BislimExplorer\AndroidApp\app\src\main\AndroidManifest.xml:83:9-86:58
+113            android:name="com.app.BislimScout.LocationMapsActivity"
+113-->D:\Dropbox\Devs\BislimExplorer\AndroidApp\app\src\main\AndroidManifest.xml:84:13-68
+114            android:label="@string/title_activity_location_maps"
+114-->D:\Dropbox\Devs\BislimExplorer\AndroidApp\app\src\main\AndroidManifest.xml:85:13-65
+115            android:theme="@style/AppTheme.NoActionBar" />
+115-->D:\Dropbox\Devs\BislimExplorer\AndroidApp\app\src\main\AndroidManifest.xml:86:13-56
+116        <activity
+116-->D:\Dropbox\Devs\BislimExplorer\AndroidApp\app\src\main\AndroidManifest.xml:87:9-90:58
+117            android:name="com.app.BislimScout.LocationMapsActivityNew"
+117-->D:\Dropbox\Devs\BislimExplorer\AndroidApp\app\src\main\AndroidManifest.xml:88:13-71
+118            android:label="@string/title_activity_location_maps"
+118-->D:\Dropbox\Devs\BislimExplorer\AndroidApp\app\src\main\AndroidManifest.xml:89:13-65
+119            android:theme="@style/AppTheme.NoActionBar" />
+119-->D:\Dropbox\Devs\BislimExplorer\AndroidApp\app\src\main\AndroidManifest.xml:90:13-56
+120
+121        <provider
+121-->[com.squareup.picasso:picasso:2.71828] C:\Users\slavcoc\.gradle\caches\transforms-2\files-2.1\6a584ffdbe20728bd0dd3a0632a2413d\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
+122            android:name="com.squareup.picasso.PicassoProvider"
+122-->[com.squareup.picasso:picasso:2.71828] C:\Users\slavcoc\.gradle\caches\transforms-2\files-2.1\6a584ffdbe20728bd0dd3a0632a2413d\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
+123            android:authorities="com.app.BislimScout.com.squareup.picasso"
+123-->[com.squareup.picasso:picasso:2.71828] C:\Users\slavcoc\.gradle\caches\transforms-2\files-2.1\6a584ffdbe20728bd0dd3a0632a2413d\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
+124            android:exported="false" /> <!-- Needs to be explicitly declared on P+ -->
+124-->[com.squareup.picasso:picasso:2.71828] C:\Users\slavcoc\.gradle\caches\transforms-2\files-2.1\6a584ffdbe20728bd0dd3a0632a2413d\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
+125        <uses-library
+125-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\slavcoc\.gradle\caches\transforms-2\files-2.1\edb03ed300512ae8da7c146a103a6c79\jetified-play-services-maps-17.0.0\AndroidManifest.xml:33:9-35:40
+126            android:name="org.apache.http.legacy"
+126-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\slavcoc\.gradle\caches\transforms-2\files-2.1\edb03ed300512ae8da7c146a103a6c79\jetified-play-services-maps-17.0.0\AndroidManifest.xml:34:13-50
+127            android:required="false" />
+127-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\slavcoc\.gradle\caches\transforms-2\files-2.1\edb03ed300512ae8da7c146a103a6c79\jetified-play-services-maps-17.0.0\AndroidManifest.xml:35:13-37
+128
+129        <activity
+129-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\slavcoc\.gradle\caches\transforms-2\files-2.1\6fb3f6cd2b75dfe7dd10f87d94351f9e\jetified-play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+130            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+130-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\slavcoc\.gradle\caches\transforms-2\files-2.1\6fb3f6cd2b75dfe7dd10f87d94351f9e\jetified-play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+131            android:exported="false"
+131-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\slavcoc\.gradle\caches\transforms-2\files-2.1\6fb3f6cd2b75dfe7dd10f87d94351f9e\jetified-play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+132            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+132-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\slavcoc\.gradle\caches\transforms-2\files-2.1\6fb3f6cd2b75dfe7dd10f87d94351f9e\jetified-play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+133
+134        <meta-data
+134-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\slavcoc\.gradle\caches\transforms-2\files-2.1\c39f27975e2128f358c90a3c3f9b8fee\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+135            android:name="com.google.android.gms.version"
+135-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\slavcoc\.gradle\caches\transforms-2\files-2.1\c39f27975e2128f358c90a3c3f9b8fee\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+136            android:value="@integer/google_play_services_version" />
+136-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\slavcoc\.gradle\caches\transforms-2\files-2.1\c39f27975e2128f358c90a3c3f9b8fee\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+137    </application>
+138
+139</manifest>
